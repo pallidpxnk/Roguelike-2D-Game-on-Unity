@@ -16,7 +16,7 @@ TagManager:
   - Player Bullets
   - Enemies
   - Enemy Bullets
-  - 
+  - Ignore Bullets
   - 
   - 
   - 
@@ -41,6 +41,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1533577733
+    locked: 0
+  - name: Enemies
+    uniqueID: 2090028679
+    locked: 0
+  - name: Bullets
+    uniqueID: 4284331805
     locked: 0
   - name: Player
     uniqueID: 169630545
