@@ -29,7 +29,7 @@ public class EnemyBullet : MonoBehaviour
         {
             PlayerHealthContoller.instance.DamagePlayer();
         }
-
+        AudioManager.instance.PlaySFX(7);
     }
 
     private void OnBecameInvisible()

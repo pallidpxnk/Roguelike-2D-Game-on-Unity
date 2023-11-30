@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetMouseButtonDown(0)) 
         {
             Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
+            AudioManager.instance.PlaySFX(6);
             shotCounter = timeBetweenShots;
         }
         if(Input.GetMouseButton(0)) 

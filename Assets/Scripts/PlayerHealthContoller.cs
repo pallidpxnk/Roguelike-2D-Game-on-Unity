@@ -35,12 +35,15 @@ public class PlayerHealthContoller : MonoBehaviour
     public void DamagePlayer()
     {
         currentHealth--;
-
+        AudioManager.instance.PlaySFX(4);
         if (currentHealth <= 0) 
         {
             PlayerController.instance.gameObject.SetActive(false);
 
             UIController.instance.deathScreen.SetActive(true);
+
+            AudioManager.instance.PlayGameOver();
+            AudioManager.instance.PlaySFX(2);
         }
 
 

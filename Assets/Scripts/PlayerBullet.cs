@@ -28,6 +28,7 @@ public class PlayerBullet : MonoBehaviour
         {
             other.GetComponent<EnemyController>().DamageEnemy(damageToGive);
         }
+        AudioManager.instance.PlaySFX(7);
     }
 
     private void OnBecameInvisible()
